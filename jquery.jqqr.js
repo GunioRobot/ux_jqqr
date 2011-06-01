@@ -1,13 +1,13 @@
-(function($) {
-  $.fn.jqqr = function(options) {
-    options = $.extend({
-      needle:   'default',
-      haystack: 'default'
-    }, options);
-
-    $(this).each(function() {
-      alert('buttfor')
-    });
-  }
-})(jQuery);
-
+(function($){
+    $.fn.jqqr = function(options) {
+        return this.each(function(){
+          
+          var ch1 = $(this).html();
+          $(this).html('');
+          
+          var dimensions = $(this).attr('rel').split('x');
+          
+          $(this).append('<img src="http://chart.apis.google.com/chart?cht=qr&chs='+dimensions[0]+'x'+dimensions[1]+'&chl='+ch1+'">')
+        });
+    };
+}(jQuery));
