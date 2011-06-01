@@ -1,5 +1,7 @@
 jquery plugin that programmatically generates a qr code
 
+It degrades somewhat gracefully showing the text that your qr code was going to generate...
+
 usage:
 <script type="text/javascript">
 $(document).ready(function() {
