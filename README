@@ -1,1 +1,10 @@
 jquery plugin that programmatically generates a qr code
+
+usage:
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.qrcode').jqqr();
+});
+</script>
+
+<div class="qrcode" rel="500x500">https://github.com/douggdev</div>
